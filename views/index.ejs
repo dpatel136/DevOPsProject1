@@ -1,4 +1,94 @@
-<p><b>Application:</b> Node.js CI/CD Project</p>
-<p><b>Author:</b> Dinesh Patel</p>
-<p><b>Version:</b> 1.0.0</p>
-<p><b>Deployment Time:</b> <%= deployTime %></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD Pipeline</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+        }
+
+        .card{
+            width:600px;
+            background:#fff;
+            border-radius:12px;
+            padding:35px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,.4);
+        }
+
+        h1{
+            color:#00b894;
+            margin-bottom:15px;
+        }
+
+        h2{
+            color:#f39c12;
+            margin-bottom:20px;
+        }
+
+        p{
+            margin:10px 0;
+            font-size:18px;
+            color:#333;
+        }
+
+        .success{
+            color:green;
+            font-weight:bold;
+            font-size:20px;
+            margin-top:20px;
+        }
+
+        footer{
+            margin-top:25px;
+            color:#666;
+            font-size:14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>🚀 Jenkins CI/CD Pipeline</h1>
+
+    <h2>Node.js Application Successfully Deployed</h2>
+
+    <p><strong>Build Tool:</strong> Jenkins</p>
+
+    <p><strong>Container:</strong> Docker</p>
+
+    <p><strong>Technology:</strong> Node.js + Express</p>
+
+    <p><strong>Author:</strong> <%= author %></p>
+
+    <p><strong>Version:</strong> 1.0.0</p>
+
+    <p><strong>Deployment Time:</strong> <%= deployTime %></p>
+
+    <p class="success">Deployment Successful ✅</p>
+
+    <footer>
+        Created by <strong><%= author %></strong>
+    </footer>
+
+</div>
+
+</body>
+</html>

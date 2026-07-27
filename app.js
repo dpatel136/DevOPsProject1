@@ -4,17 +4,19 @@ const path = require("path");
 const app = express();
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-
     res.render("index", {
-        author: "Dinesh Patel",
+        author: "YOUR NAME", // <-- Apna naam yahan likho
         deployTime: process.env.DEPLOY_TIME || new Date().toLocaleString()
     });
-
 });
 
-app.listen(3000, () => {
-    console.log("Server Started");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server Started on Port ${PORT}`);
 });
