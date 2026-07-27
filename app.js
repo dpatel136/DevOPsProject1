@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
     res.render("index", {
-        author: "Dinesh PAtel",
+        author: "Dinesh Patel",
         deployTime: process.env.DEPLOY_TIME || new Date().toLocaleString()
     });
 });
